@@ -1,0 +1,22 @@
+body{
+    display: flex;
+}
+
+.spinner{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: 10px solid blue;
+    border-bottom-color: transparent;
+    border-radius: 200px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
