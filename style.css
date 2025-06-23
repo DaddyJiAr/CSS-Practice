@@ -1,0 +1,76 @@
+h1{
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
+}
+    
+.card{
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    animation: fade-in 1s ease;
+}
+
+.img-container {
+  width: 400px;
+  overflow: hidden;
+}
+
+.img-container img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;           
+  transition: transform 1s ease;
+}
+
+/* .card:hover{
+    animation: bounce 2s ease-in-out infinite; // di pwede lagay kasi umay pag dalawa animation
+} */
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card:hover .socials {
+    opacity: 1;
+    padding: 20px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden; 
+    transition: padding 1s ease, opacity 1s ease; 
+}
+
+.socials a{
+    margin: 0 10px;
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
