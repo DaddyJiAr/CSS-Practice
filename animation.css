@@ -1,0 +1,25 @@
+.world::after{
+    content: 'World!';
+    color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: world 1s ease;
+    white-space: nowrap;
+}
+
+.world{
+    display: inline-block;
+    position: relative;
+}
+
+@keyframes world {
+    from{
+        opacity: 0;
+        transform: translateX(-60%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-0%);
+    }
+}
