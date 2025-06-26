@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Netflix;
+    src: url(assets/BebasNeue.otf);
+}
+*{
+    font-family: Netflix;
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+}
+
+body::before{
+    content: "";
+    z-index: -10;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url(assets/netflix-bg.jpg);
+    background-size: cover;
+    filter: brightness(0.3);
+}
+select{
+    padding: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left{
+    margin: 0 150px;
+}
+svg{
+    margin-left: 50px;
+}
+textPath{
+    fill: red;
+    filter: brightness(0.95);
+    font-size: 3.3em;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+.left *{
+    margin: 0 10px;
+}
+
+.language{
+    font-size: 1.3em;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language *{
+    margin: 0 8px;
+}
+.sign-in{
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.fa-language{
+    font-size: 2em;
+    color: white;
+}
+
+
+section{
+    /* border: 1px solid white; */
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+section *{
+    color: white;
+    font-family: Segoe UI;
+}
+
+section .sub-title{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+section .text{
+    font-size: 1.1em;
+}
+
+section h1{
+    margin: 100px 0 0 0;
+    font-size: 4em;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.email button{
+    background-color: rgb(225, 27, 27);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 1s ease;
+}
+
+.email button:hover{
+    background-color: rgba(225, 27, 27, 0.874);
+    
+}
+.email input{
+    width: 300px;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5);;
+    padding: 15px;
+}
+.email *{
+    margin: 0 10px;
+}
+
+.section{
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 140px;
+    background-color: black;
+    /* border: 1px solid white; */
+    overflow: hidden;
+}
+
+.section h2{
+    margin-top: 100px;
+    
+}
+
+body{
+    overflow-x: hidden;
+
+
+}
+
+.curve::before{
+    content: '';
+    overflow: hidden;
+    /* margin-top: 50px; */
+    left: -60px;
+    width: 1630px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    border-radius: 100% 100%;
+    border: 5px solid transparent;
+    border-top-color: red;
+    background-color: transparent;
+}
